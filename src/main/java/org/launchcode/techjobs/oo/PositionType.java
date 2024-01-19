@@ -32,12 +32,12 @@ public class PositionType {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof PositionType that)) return false;
-        return getId() == that.getId() && Objects.equals(getValue(), that.getValue());
+        return getId() == that.getId();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getValue());
+        return Objects.hash(getId());
     }
 
 
