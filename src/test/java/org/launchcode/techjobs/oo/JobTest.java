@@ -44,4 +44,32 @@ public class JobTest {
     public void testJobsForEquality() {
         assertFalse(job3.equals(job4));
     }
+    @Test
+    public void  testToStringStartsAndEndsWithNewLine() {
+        String newLine = System.lineSeparator();
+        String testJob = job1.toString();
+//        Fails due to line separator differences
+//        assertEquals(newLine, String.valueOf(testJob.charAt(0)));
+//        assertEquals(newLine, String.valueOf(testJob.charAt(testJob.length() - 1)));
+        assertTrue(testJob.startsWith(newLine));
+        assertTrue(testJob.endsWith(newLine));
+    }    @Test
+    public void  testToStringContainsCorrectLabelsAndData() {
+        String newLine = System.lineSeparator();
+        String answer = newLine +
+                "ID: 1" + newLine +
+                "Name: Product tester" + newLine +
+                "Employer: ACME" + newLine +
+                "Location: Desert" + newLine +
+                "Position Type: Quality control" + newLine +
+                "Core Competency: Persistence" + newLine;
+        String testJob = job1.toString();
+        assertEquals(answer, testJob);
+    }
+    @Test
+    public void testToStringHandlesEmptyField() {
+        String testJob = job3.toString();
+        String newLine = System.lineSeparator();
+        assertTrue(testJob.equals(newLine + "Oops this job doesn't exist" + newLine));
+    }
 }

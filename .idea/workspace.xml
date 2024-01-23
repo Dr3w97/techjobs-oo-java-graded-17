@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/CoreCompetency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/CoreCompetency.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/PositionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/PositionType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +19,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,7 +58,13 @@
     "Gradle.Build techjobs-oo-java-graded-17.executor": "Run",
     "Gradle.JobTest.executor": "Run",
     "Gradle.JobTest.testJobConstructorSetsAllFields.executor": "Run",
+    "Gradle.JobTest.testJobsForEquality.executor": "Run",
     "Gradle.JobTest.testSettingJobId.executor": "Run",
+    "Gradle.JobTest.testToStringContainsCorrectLabelsAndData.executor": "Run",
+    "Gradle.JobTest.testToStringHandlesEmptyField.executor": "Run",
+    "Gradle.JobTest.testToStringStartsAndEndsWithNewLine.executor": "Run",
+    "Gradle.TestTaskFive.executor": "Run",
+    "Gradle.TestTaskFive.testTestToStringStartsAndEndsWithNewLineExists.executor": "Run",
     "Gradle.techjobs-oo-java-graded-17 [:Main.main()].executor": "Run",
     "JUnit.JobTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
@@ -64,7 +78,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.JobTest.testJobsForEquality">
+  <component name="RunManager" selected="Gradle.JobTest.testToStringHandlesEmptyField">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.launchcode.techjobs.oo.Main" />
       <module name="techjobs-oo-java17-graded.main" />
@@ -78,7 +92,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JobTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="JobTest.testToStringContainsCorrectLabelsAndData" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -91,7 +105,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testToStringContainsCorrectLabelsAndData&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -102,7 +116,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="JobTest.testJobConstructorSetsAllFields" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="JobTest.testToStringHandlesEmptyField" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -115,7 +129,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testJobConstructorSetsAllFields&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testToStringHandlesEmptyField&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -126,7 +140,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="JobTest.testJobsForEquality" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="JobTest.testToStringStartsAndEndsWithNewLine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -139,7 +153,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testJobsForEquality&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testToStringStartsAndEndsWithNewLine&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -150,7 +164,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="JobTest.testSettingJobId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestTaskFive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -163,7 +177,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testSettingJobId&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.TestTaskFive&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -188,19 +202,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Gradle.JobTest.testJobConstructorSetsAllFields" />
-      <item itemvalue="Gradle.JobTest.testJobsForEquality" />
-      <item itemvalue="Gradle.JobTest" />
-      <item itemvalue="Gradle.JobTest.testSettingJobId" />
+      <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
+      <item itemvalue="Gradle.JobTest.testToStringHandlesEmptyField" />
+      <item itemvalue="Gradle.TestTaskFive" />
+      <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
       <item itemvalue="JUnit.JobTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.JobTest.testJobsForEquality" />
-        <item itemvalue="Gradle.JobTest.testJobConstructorSetsAllFields" />
-        <item itemvalue="Gradle.JobTest.testSettingJobId" />
-        <item itemvalue="Gradle.JobTest" />
+        <item itemvalue="Gradle.JobTest.testToStringHandlesEmptyField" />
+        <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
+        <item itemvalue="Gradle.TestTaskFive" />
       </list>
     </recent_temporary>
   </component>

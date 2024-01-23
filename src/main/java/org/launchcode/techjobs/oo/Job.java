@@ -4,8 +4,8 @@ import java.util.Objects;
 
 public class Job {
 
-    private int id;
-    private static int nextId = 1;
+    private Integer id;
+    private static Integer nextId = 1;
 
     private String name;
     private Employer employer;
@@ -48,7 +48,7 @@ public class Job {
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
     //  and id.
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -91,5 +91,27 @@ public class Job {
     public void setCoreCompetency(CoreCompetency coreCompetency) {
         this.coreCompetency = coreCompetency;
     }
+
+    @Override
+    public String toString() {
+        String newline = System.lineSeparator();
+        final String DEFAULT_MESSAGE = "Data not available";
+
+        if (getId() != null && getName() == null && getEmployer() == null && getLocation() == null && getPositionType() == null && getCoreCompetency() == null) {
+            return newline + "Oops this job doesn't exist" + newline;
+        }
+
+        return newline +
+               "ID: " + getId() + newline +
+               "Name: " + (getName() != null ? getName() : DEFAULT_MESSAGE) + newline +
+               "Employer: " + (getEmployer() != null ? getEmployer() : DEFAULT_MESSAGE) + newline +
+               "Location: " + (getLocation() != null ? getLocation() : DEFAULT_MESSAGE) + newline +
+               "Position Type: " + (getPositionType() != null ? getPositionType() : DEFAULT_MESSAGE) + newline +
+               "Core Competency: " + (getCoreCompetency() != null ? getCoreCompetency() : DEFAULT_MESSAGE) + newline;
+
+
+    }
 }
+
+
 
