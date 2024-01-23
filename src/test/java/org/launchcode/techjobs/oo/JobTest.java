@@ -56,14 +56,14 @@ public class JobTest {
     }    @Test
     public void  testToStringContainsCorrectLabelsAndData() {
         String newLine = System.lineSeparator();
+        String testJob = job1.toString();
         String answer = newLine +
-                "ID: 1" + newLine +
+                "ID: " + job1.getId() + newLine +
                 "Name: Product tester" + newLine +
                 "Employer: ACME" + newLine +
                 "Location: Desert" + newLine +
                 "Position Type: Quality control" + newLine +
                 "Core Competency: Persistence" + newLine;
-        String testJob = job1.toString();
         assertEquals(answer, testJob);
     }
     @Test

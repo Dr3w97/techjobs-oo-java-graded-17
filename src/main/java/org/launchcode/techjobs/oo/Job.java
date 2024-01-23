@@ -4,8 +4,8 @@ import java.util.Objects;
 
 public class Job {
 
-    private Integer id;
-    private static Integer nextId = 1;
+    private int id;
+    private static int nextId = 1;
 
     private String name;
     private Employer employer;
@@ -37,12 +37,12 @@ public class Job {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Job job)) return false;
-        return id == job.id && Objects.equals(name, job.name) && Objects.equals(employer, job.employer) && Objects.equals(location, job.location) && Objects.equals(positionType, job.positionType) && Objects.equals(coreCompetency, job.coreCompetency);
+        return id == job.id;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, employer, location, positionType, coreCompetency);
+        return Objects.hash(id);
     }
 
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
@@ -103,11 +103,11 @@ public class Job {
 
         return newline +
                "ID: " + getId() + newline +
-               "Name: " + (getName() != null ? getName() : DEFAULT_MESSAGE) + newline +
-               "Employer: " + (getEmployer() != null ? getEmployer() : DEFAULT_MESSAGE) + newline +
-               "Location: " + (getLocation() != null ? getLocation() : DEFAULT_MESSAGE) + newline +
-               "Position Type: " + (getPositionType() != null ? getPositionType() : DEFAULT_MESSAGE) + newline +
-               "Core Competency: " + (getCoreCompetency() != null ? getCoreCompetency() : DEFAULT_MESSAGE) + newline;
+               "Name: " + (getName() != null && !getName().isEmpty() ? getName() : DEFAULT_MESSAGE) + newline +
+               "Employer: " + (getEmployer() != null && !getEmployer().getValue().isEmpty() ? getEmployer() : DEFAULT_MESSAGE) + newline +
+               "Location: " + (getLocation() != null && !getLocation().getValue().isEmpty() ? getLocation() : DEFAULT_MESSAGE) + newline +
+               "Position Type: " + (getPositionType() != null && !getPositionType().getValue().isEmpty() ?  getPositionType() : DEFAULT_MESSAGE) + newline +
+               "Core Competency: " + (getCoreCompetency() != null && !getCoreCompetency().getValue().isEmpty() ? getCoreCompetency() : DEFAULT_MESSAGE) + newline;
 
 
     }
